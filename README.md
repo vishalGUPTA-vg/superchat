@@ -1,6 +1,6 @@
 # DEVGRAM
 ## About Project
-This project is a Chat app with the user Authentication somewhat clone of instagram and currently contain few features of it like uploading Pictures.
+This project is a Chat app with the user Authentication kind of a Group Chat Room Currently.
 Web-App Link-: https://dev-chats.netlify.app
 Source Code-: https://github.com/devang-stack/superchat
 ## Technoligies and Tool's
@@ -16,6 +16,6 @@ It can be a ChatApp in which one can
 1. Have personal account (authentication)
 2. End-to-End Encryption
 3. send videos videos and photos
-4. Audios
+4. send  Audios
 
 
