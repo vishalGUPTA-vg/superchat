@@ -15,7 +15,7 @@ Source Code-: https://github.com/devang-stack/superchat
 It can be a ChatApp in which one can
 1. Have personal account (authentication)
 2. End-to-End Encryption
-3. send videos videos and photos
-4. send  Audios
+3. Share videos and photos
+4. Share Audios files
 
 
