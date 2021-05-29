@@ -1,4 +1,4 @@
-# DEVGRAM
+# DEVCHAT
 ## About Project
 This project is a Chat app with the user Authentication kind of a Group Chat Room Currently.
 Web-App Link-: https://dev-chats.netlify.app
