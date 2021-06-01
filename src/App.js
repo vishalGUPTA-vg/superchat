@@ -4,6 +4,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 import encrypt from './encode.js'
+import firebaseConfig from "./api"
 // import decoding from './decoing.js'
 
 // import 'firebase/analytics';
@@ -13,14 +14,8 @@ import {useAuthState} from 'react-firebase-hooks/auth';
 import {useCollectionData} from 'react-firebase-hooks/firestore'
 import decoding from './decoing';
 
-  firebase.initializeApp({
-    apiKey: "AIzaSyAXe979cz0OZ9sM2K9QL1x0tgsOiThUuJI",
-    authDomain: "superchat-bbcc2.firebaseapp.com",
-    projectId: "superchat-bbcc2",
-    storageBucket: "superchat-bbcc2.appspot.com",
-    messagingSenderId: "175038957407",
-    appId: "1:175038957407:web:bb74d705c81c2634ba98ea"
-    });
+  firebase.initializeApp(
+    firebaseConfig);
 
     const auth= firebase.auth();
     const firestore= firebase.firestore();
