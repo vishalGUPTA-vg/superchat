@@ -3,19 +3,23 @@ import './App.css';
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
+import encrypt from './encode.js'
+// import decoding from './decoing.js'
+
 // import 'firebase/analytics';
 
 //hooks
 import {useAuthState} from 'react-firebase-hooks/auth';
 import {useCollectionData} from 'react-firebase-hooks/firestore'
+import decoding from './decoing';
 
   firebase.initializeApp({
-      apiKey: "AIzaSyAe843WwfuE_XzXvN-F_uc08wKS4ekjn0A",
-      authDomain: "dev-chat-9b6f5.firebaseapp.com",
-      projectId: "dev-chat-9b6f5",
-      storageBucket: "dev-chat-9b6f5.appspot.com",
-      messagingSenderId: "179440266688",
-      appId: "1:179440266688:web:3a03b9f5663080b1436c25"
+    apiKey: "AIzaSyAXe979cz0OZ9sM2K9QL1x0tgsOiThUuJI",
+    authDomain: "superchat-bbcc2.firebaseapp.com",
+    projectId: "superchat-bbcc2",
+    storageBucket: "superchat-bbcc2.appspot.com",
+    messagingSenderId: "175038957407",
+    appId: "1:175038957407:web:bb74d705c81c2634ba98ea"
     });
 
     const auth= firebase.auth();
@@ -83,7 +87,7 @@ function ChatRoom() {
     const { uid, photoURL } = auth.currentUser;
 
     await messagesRef.add({
-      text: formValue,
+      text: encrypt(formValue),
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photoURL
@@ -121,7 +125,7 @@ function ChatMessage(props) {
   return (<>
     <div className={`message ${messageClass}`}>
       <img alt="" src={photoURL} />
-      <p>{text}</p>
+      <p>{decoding(text)}</p>
     </div>
   </>)
 }
