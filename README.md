@@ -1,8 +1,6 @@
 # DEVCHAT
 ## About Project
 This project is a Chat app with the user Authentication kind of a Group Chat Room Currently.
-Web-App Link-: https://dev-chats.netlify.app
-Source Code-: https://github.com/devang-stack/superchat
 ## Technoligies and Tool's
 1. This Web App is built in Reactjs,HTML5 and CSS
 2. Used Visual Studio Code as a Tool.
